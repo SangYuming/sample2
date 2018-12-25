@@ -15,4 +15,8 @@ Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/help', 'StaticPagesController@help')->name('help');
 Route::get('/about', 'StaticPagesController@about')->name('about');
 
+//==================注册========================
+//注册页面
 Route::get('signup', 'UsersController@create')->name('signup');
+//用户功能
+Route::resource('users','UsersController');
