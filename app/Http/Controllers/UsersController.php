@@ -30,6 +30,7 @@ class UsersController extends Controller
             'name' => 'required|max:50',
             //email:邮箱格式验证
             //unique:users：数据唯一性验证
+            //confirmed
             'email' => 'required|email|unique:users|max:255',
             'password' => 'required|confirmed|min:6'
         ]);
